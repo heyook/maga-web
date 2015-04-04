@@ -1,9 +1,11 @@
 (function() {
   $(function() {
-    return $('.main-gallery').flickity({
-      contain: true,
-      prevNextButtons: false,
-      pageDots: false
+    var container;
+    container = $('.container');
+    return container.imagesLoaded(function() {
+      return container.masonry({
+        itemSelector: '.item'
+      });
     });
   });
 

@@ -2,33 +2,34 @@
 %html{lang: "en"}
   %head
     %meta{charset: "utf-8"}/
-    %title Heyook
+    %title LA翻译 周刊第3期
     %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
     %meta{content: "Herox Tech. Group", name: "description"}/
-    %meta{content: "Heyook Ltd.", name: "author"}/
+    %meta{content: "Qi He", name: "author"}/
     /[if lt IE 9]
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    %link{href: "../css/flickity.css", rel: "stylesheet"}/
     %link{href: "../css/default.css", rel: "stylesheet"}/
   %body
     .container
-      .main-gallery
-        .gallery-cell
-          %img{src: "../img/z-1-1.jpg"}
-        .gallery-cell
-          %img{src: "../img/z-1-2.jpg"}
-        .gallery-cell
-          %img{src: "../img/z-1-3.jpg"}
-      .footer
-        %img{src: "../img/small.png"}
-        %span LA翻译 杂志第3期
+      .item
+        %img{src: "../img/z-1-4.jpg"}
+      .item.w2
+        %img{src: "../img/z-1-4.jpg"}
+      .item
+        %img{src: "../img/z-1-4.jpg"}
     / main container
+
+    .footer
+      %img{src: "../img/small.png"}
+      %span LA翻译 周刊第3期
+    / footer
 
     /
       Le javascript
       \==================================================
     / Placed at the end of the document so the pages load faster
     %script{src: "../js/jquery-2.1.1.min.js"}
-    %script{src: "../js/flickity.pkgd.min.js"}
+    %script{src: "../js/imagesloaded.pkgd.min.js"}
+    %script{src: "../js/masonry.pkgd.min.js"}
     %script{src: "../js/app.js"}
     %script{src: "../js/ga.js"}

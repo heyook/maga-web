@@ -1,5 +1,5 @@
 $ ->
-  $('.main-gallery').flickity
-    contain: true,
-    prevNextButtons: false,
-    pageDots: false
+  container = $('.container')
+  container.imagesLoaded ->
+    container.masonry
+      itemSelector: '.item'

@@ -6,16 +6,21 @@
   height: 10px; }
 
 /* Setup Styles */
-body .container {
-  max-width: 640px; }
-  body .container .main-gallery .flickity-viewport .flickity-slider .gallery-cell {
-    width: 320px;
-    height: 524px; }
-    body .container .main-gallery .flickity-viewport .flickity-slider .gallery-cell img {
-      width: 100%;
-      height: 100%; }
-body .footer span {
-  font-family: "微软雅黑", "Helvetica Neue", STXihei, "华文细黑", Helvetica, Arial, sans-serif, "Microsoft YaHei";
-  float: right;
-  font-size: 0.8em;
-  line-height: 30px; }
+body {
+  background-color: #010101; }
+  body .container .item {
+    width: 25%; }
+    body .container .item img {
+      width: 100%; }
+    body .container .item.w2 {
+      width: 50%; }
+  body .footer {
+    position: fixed;
+    bottom: 0; }
+    body .footer span {
+      font-family: "微软雅黑", "Helvetica Neue", STXihei, "华文细黑", Helvetica, Arial, sans-serif, "Microsoft YaHei";
+      float: right;
+      font-size: 0.8em;
+      line-height: 30px;
+      color: #555555;
+      margin-left: 5px; }
